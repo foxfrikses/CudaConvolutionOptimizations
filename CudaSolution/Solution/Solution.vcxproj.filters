@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="main.cu" />
+    <CudaCompile Include="TestData\device_test_data.cu">
+      <Filter>TestData</Filter>
+    </CudaCompile>
+    <CudaCompile Include="TestData\test_data.cu">
+      <Filter>TestData</Filter>
+    </CudaCompile>
+    <CudaCompile Include="DeviceConvolutionsTester\device_convolution_tester.cu">
+      <Filter>DeviceConvolutionsTester</Filter>
+    </CudaCompile>
+    <CudaCompile Include="DeviceConvolutions\3_256_256_to_16_256_256\convolution_3_256_256_to_16_256_256.cu">
+      <Filter>DeviceConvolutions\3_256_256_to_16_256_256</Filter>
+    </CudaCompile>
+    <CudaCompile Include="DeviceConvolutions\Original\original_convolution.cu">
+      <Filter>DeviceConvolutions\Original</Filter>
+    </CudaCompile>
+    <CudaCompile Include="DeviceConvolutions\OriginalFused\original_fused_convolution.cu">
+      <Filter>DeviceConvolutions\OriginalFused</Filter>
+    </CudaCompile>
+    <CudaCompile Include="DeviceConvolutions\SizeFlexibleOptimized\size_flexible_optimized_convolution.cu">
+      <Filter>DeviceConvolutions\SizeFlexibleOptimized</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="TestData">
+      <UniqueIdentifier>{bb0f5e3a-dfcf-42a0-b513-b494d7395e3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeviceConvolutions">
+      <UniqueIdentifier>{59af3249-d6a0-41fe-815d-64fa461d898e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeviceConvolutions\Original">
+      <UniqueIdentifier>{1ee774d0-b002-4c66-96f0-ab5c637a6eac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeviceConvolutions\SizeFlexibleOptimized">
+      <UniqueIdentifier>{df3132e2-4c17-4517-a55a-ff43d2e7b55c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeviceConvolutions\3_256_256_to_16_256_256">
+      <UniqueIdentifier>{284a4216-92fc-4344-b329-0b7210908fa4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HostConvolution">
+      <UniqueIdentifier>{119b785d-79bc-40a7-a7f2-e19fc079d5ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Other">
+      <UniqueIdentifier>{a541f43b-d1aa-49dc-8354-89bbbf40027a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeviceConvolutionsTester">
+      <UniqueIdentifier>{9e697939-30dc-4ed9-a76e-80d8324ab320}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeviceConvolutions\OriginalFused">
+      <UniqueIdentifier>{d258e093-3069-4fbc-8cc6-c7b363b75112}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TestData\device_test_data.cuh">
+      <Filter>TestData</Filter>
+    </ClInclude>
+    <ClInclude Include="TestData\test_data.cuh">
+      <Filter>TestData</Filter>
+    </ClInclude>
+    <ClInclude Include="Other\utils.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="HostConvolution\convolution_cpu.h">
+      <Filter>HostConvolution</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceConvolutionsTester\device_convolution_tester.h">
+      <Filter>DeviceConvolutionsTester</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceConvolutions\device_convolution.cuh">
+      <Filter>DeviceConvolutions</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceConvolutions\3_256_256_to_16_256_256\convolution_3_256_256_to_16_256_256.h">
+      <Filter>DeviceConvolutions\3_256_256_to_16_256_256</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceConvolutions\Original\original_convolution.h">
+      <Filter>DeviceConvolutions\Original</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceConvolutions\OriginalFused\original_fused_convolution.h">
+      <Filter>DeviceConvolutions\OriginalFused</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceConvolutions\SizeFlexibleOptimized\size_flexible_optimized_convolution.h">
+      <Filter>DeviceConvolutions\SizeFlexibleOptimized</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Other\utils.cpp">
+      <Filter>Other</Filter>
+    </ClCompile>
+    <ClCompile Include="HostConvolution\convolution_cpu.cpp">
+      <Filter>HostConvolution</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+  </ItemGroup>
+</Project>
